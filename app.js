@@ -18,7 +18,7 @@ mathBtn.addEventListener('click', () => {
 // Register service worker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/test-pwa-240912/sw.js').then((registration) => {
+        navigator.serviceWorker.register('/sw.js').then((registration) => {
             console.log('ServiceWorker registered with scope:', registration.scope);
         }).catch((error) => {
             console.error('ServiceWorker registration failed:', error);
